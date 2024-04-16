@@ -587,9 +587,7 @@ body {
 
 .home_main {
 	text-align: center;
-	height: -moz-fit-content;
-	height: fit-content;
-	padding: 30px 10%;
+	height: 200vh;
 	margin: 0% 0%;
 	background: linear-gradient(-45deg, #333136, #1d1c1e, #333136, #1d1c1e);
 	background-size: 400% 400%;
@@ -597,6 +595,25 @@ body {
 	border-radius: 10px;
 	overflow: hidden;
 	margin-top: -13vh;
+}
+.home_main .main_bkgd {
+	position: absolute;
+	width: 100vw;
+	height: 200vh;
+	background: url("../../dist/img/tumblr_89a85fac4e9e203ebc0393e93a3e33be_95c1386f_500.gif");
+	background-size: cover;
+	background-position: 40%;
+	background-repeat: no-repeat;
+	filter: blur(4px);
+}
+.home_main .main_bkgd .main_bkgd-blur {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 157, 255, 0.756), pink, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25), rgba(255, 192, 203, 0.5));
+	opacity: 90%;
+	display: grid;
+	grid-template-columns: repeat(120, 1fr);
+	grid-template-rows: repeat(360, 1fr);
 }
 .home_main h3 {
 	text-transform: capitalize;
@@ -777,7 +794,7 @@ body {
 .home_footer .home_footer-content {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
 	color: #ffffff;
 	row-gap: 2em;
 }
