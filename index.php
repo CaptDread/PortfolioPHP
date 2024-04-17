@@ -9,11 +9,18 @@ $title = "Argh Portfolio off the port bow!";
             <?php require("components/hero.php"); ?>
 		</section>
 		<main class="home_main">
-            <div class="main_bkgd">
-                <div class="main_bkgd-blur"></div>
-            </div>
             <div class="content">
                 <section class="main_projects">
+                    <div class="main_bkgd">
+                        <div class="main_bkgd-blur"></div>
+                    </div>
+                    <div class="project_sign-container">
+                        <?php require("components/assets/driftwood.php"); ?>
+                            <article>
+                                <p>projects</p>
+                            </article>
+                        </div>
+                    </div>
                     <!-- <h3>projects</h3> -->
                 </section>
                 <section class="main_pros">
