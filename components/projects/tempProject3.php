@@ -1,11 +1,11 @@
 <?php 
 
-$projName = "Name3";
+$projName = "Build Blog";
 $projTag = "Tag3";
-$projDesc = "Desc3";
+$projDesc = "This is an example of my wordpress experience, while also being a showcase of my artificed builds! Stuff like Face Tracking Cameras, Automated Nerf Guns, LED Fixtures, and more!";
 $projImg = "Img3";
 $projLink = "link3.php";
-$projType = "website3"
+$projType = "website"
 ?>
 
 

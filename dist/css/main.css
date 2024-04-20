@@ -182,6 +182,8 @@ body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr) 18%;
 	grid-template-rows: repeat(1, 1fr);
+	z-index: 40;
+	position: relative;
 }
 .home_head .hide-small {
 	display: none;
@@ -372,7 +374,7 @@ body {
 #fixed {
 	position: fixed;
 	width: 100%;
-	z-index: 2;
+	z-index: 40;
 	background: #333136;
 }
 
@@ -383,7 +385,7 @@ body {
 	width: 100%;
 	height: 6vh;
 	bottom: 0%;
-	z-index: 2;
+	z-index: 40;
 }
 .followTray ul {
 	display: grid;
@@ -528,11 +530,11 @@ body {
 }
 .home_hero .hero_container .text_bubble {
 	grid-area: 4/3/7/6;
-	display: none;
+	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-columns: repeat(4, 1fr);
 	transition: all 13ms ease-in-out;
-	z-index: 40;
+	z-index: 20;
 }
 .home_hero .hero_container .text_bubble .hero_head-corner {
 	grid-row: 1/2;
@@ -636,15 +638,23 @@ body {
 	overflow: hidden;
 	margin-top: -13vh;
 }
-.home_main .main_border {
+.home_main .border_container {
+	overflow: hidden;
+	width: 100vw;
+	height: 20em;
 	position: absolute;
-	z-index: 20;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	margin-top: -10em;
+}
+.home_main .main_border {
 	width: 100%;
-	height: 1.3em;
-	margin-top: -1em;
+	height: 1.6em;
 	background: rgb(107, 66, 28);
 	border: 3px solid rgb(68, 42, 18);
 	display: flex;
+	transform: rotateZ(2deg);
 }
 .home_main .main_border .branch1 {
 	background: rgb(107, 66, 28);
@@ -662,6 +672,7 @@ body {
 	left: -2.15em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(15deg);
+	animation: windyLeaf1 13s 3800ms ease-in-out infinite;
 }
 .home_main .main_border .branch1 .branch11 {
 	background: rgb(107, 66, 28);
@@ -679,6 +690,7 @@ body {
 	left: -2.15em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(15deg);
+	animation: windyLeaf2 13s 3600ms ease-in-out infinite;
 }
 .home_main .main_border .branch2 {
 	background: rgb(107, 66, 28);
@@ -688,7 +700,7 @@ body {
 	height: 3em;
 	transform: rotateZ(-25deg);
 	position: relative;
-	top: 0.69em;
+	top: 0.8em;
 	left: 0.1%;
 }
 .home_main .main_border .branch2 .leafPNG {
@@ -696,6 +708,7 @@ body {
 	left: -2.2em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(-60deg);
+	animation: windyLeaf3 13s 4200ms ease-in-out infinite;
 }
 .home_main .main_border .branch2 .branch21 {
 	background: rgb(107, 66, 28);
@@ -713,6 +726,7 @@ body {
 	left: -2.1em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(120deg);
+	animation: windyLeaf4 13s 4000ms ease-in-out infinite;
 }
 .home_main .main_border .branch3 {
 	background: rgb(107, 66, 28);
@@ -722,7 +736,7 @@ body {
 	height: 3em;
 	transform: rotateZ(-60deg);
 	position: relative;
-	top: -0.25em;
+	top: 0.25em;
 	left: 35%;
 }
 .home_main .main_border .branch3 .leafPNG {
@@ -730,6 +744,7 @@ body {
 	left: -2em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(-30deg);
+	animation: windyLeaf5 13s 2800ms ease-in-out infinite;
 }
 .home_main .main_border .branch3 .branch31 {
 	background: rgb(107, 66, 28);
@@ -756,6 +771,7 @@ body {
 	left: -2.2em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(-60deg);
+	animation: windyLeaf6 13s 2200ms ease-in-out infinite;
 }
 .home_main .main_border .branch4 .branch41 {
 	background: rgb(107, 66, 28);
@@ -774,6 +790,7 @@ body {
 	left: -1.7em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(15deg);
+	animation: windyLeaf7 13s 2000ms ease-in-out infinite;
 }
 .home_main .main_border .branch5 {
 	background: rgb(107, 66, 28);
@@ -791,6 +808,7 @@ body {
 	left: -2em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(-45deg);
+	animation: windyLeaf8 13s 1200ms ease-in-out infinite;
 }
 .home_main .main_border .branch5 .branch51 {
 	background: rgb(107, 66, 28);
@@ -808,6 +826,7 @@ body {
 	left: -2em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(-30deg);
+	animation: windyLeaf9 13s 500ms ease-in-out infinite;
 }
 .home_main .main_border .branch6 {
 	background: rgb(107, 66, 28);
@@ -821,10 +840,11 @@ body {
 	left: 75%;
 }
 .home_main .main_border .branch6 .leafPNG {
-	top: 0.5em;
-	left: -2em;
+	top: 0.8em;
+	left: -2.2em;
 	transform-origin: 2.5em 2em;
 	transform: rotateZ(-30deg);
+	animation: windyLeaf10 13s 1000ms ease-in-out infinite;
 }
 .home_main .main_border .branch6 .branch61 {
 	background: rgb(107, 66, 28);
@@ -838,10 +858,11 @@ body {
 	left: 125%;
 }
 .home_main .main_border .branch6 .branch61 .leafPNG {
-	top: 0.5em;
-	left: -2em;
+	top: -1.8em;
+	left: -2.2em;
 	transform-origin: 2.5em 2em;
-	transform: rotateZ(-30deg);
+	transform: rotateZ(-60deg);
+	animation: windyLeaf11 13s ease-in-out infinite;
 }
 .home_main .main_border .branch6 .branch61 .branch611 {
 	background: rgb(107, 66, 28);
@@ -853,12 +874,6 @@ body {
 	position: relative;
 	top: -145%;
 	left: -225%;
-}
-.home_main .main_border .branch6 .branch61 .branch611 .leafPNG {
-	top: 0.5em;
-	left: -2em;
-	transform-origin: 2.5em 2em;
-	transform: rotateZ(-30deg);
 }
 .home_main .project_sign-container {
 	width: 100%;
@@ -960,23 +975,25 @@ body {
 	display: none;
 	flex-direction: column;
 	padding: 6% 6% 2% 6%;
+	color: #1d1c1e;
 }
 .home_main ul .project_card-container .card_back .project_card-descContainer {
 	border: 7px solid #000;
 	border-radius: 13%;
 	height: 18em;
-	padding: 3%;
+	padding: 1% 3%;
 	margin-bottom: 2%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 .home_main ul .project_card-container .card_back .project_card-descContainer p {
-	margin-top: 15%;
+	margin-top: 13%;
 	font-size: 1.1em;
 	letter-spacing: 1px;
 	line-height: 20px;
 	font-size: large;
+	color: #1d1c1e;
 }
 .home_main ul .project_card-container .card_back .project_card-descContainer a {
 	color: #1d1c1e;
@@ -1343,6 +1360,226 @@ body {
 	color: gold;
 }
 
+@keyframes windyLeaf1 {
+	0% {
+		transform: rotateZ(-5deg);
+	}
+	20% {
+		transform: rotateZ(-5deg);
+	}
+	40% {
+		transform: rotateZ(-30deg);
+	}
+	60% {
+		transform: rotateZ(-5deg);
+	}
+	80% {
+		transform: rotateZ(-25deg);
+	}
+	100% {
+		transform: rotateZ(-5deg);
+	}
+}
+@keyframes windyLeaf2 {
+	0% {
+		transform: rotateZ(-5deg);
+	}
+	20% {
+		transform: rotateZ(-5deg);
+	}
+	40% {
+		transform: rotateZ(-30deg);
+	}
+	60% {
+		transform: rotateZ(-5deg);
+	}
+	80% {
+		transform: rotateZ(-25deg);
+	}
+	100% {
+		transform: rotateZ(-5deg);
+	}
+}
+@keyframes windyLeaf3 {
+	0% {
+		transform: rotateZ(-60deg);
+	}
+	20% {
+		transform: rotateZ(-60deg);
+	}
+	40% {
+		transform: rotateZ(-30deg);
+	}
+	60% {
+		transform: rotateZ(-60deg);
+	}
+	80% {
+		transform: rotateZ(-45deg);
+	}
+	100% {
+		transform: rotateZ(-60deg);
+	}
+}
+@keyframes windyLeaf4 {
+	0% {
+		transform: rotateZ(120deg);
+	}
+	20% {
+		transform: rotateZ(120deg);
+	}
+	40% {
+		transform: rotateZ(100deg);
+	}
+	60% {
+		transform: rotateZ(120deg);
+	}
+	80% {
+		transform: rotateZ(105deg);
+	}
+	100% {
+		transform: rotateZ(120deg);
+	}
+}
+@keyframes windyLeaf5 {
+	0% {
+		transform: rotateZ(-30deg);
+	}
+	20% {
+		transform: rotateZ(-30deg);
+	}
+	40% {
+		transform: rotateZ(0deg);
+	}
+	60% {
+		transform: rotateZ(-30deg);
+	}
+	80% {
+		transform: rotateZ(-5deg);
+	}
+	100% {
+		transform: rotateZ(-30deg);
+	}
+}
+@keyframes windyLeaf6 {
+	0% {
+		transform: rotateZ(-60deg);
+	}
+	20% {
+		transform: rotateZ(-60deg);
+	}
+	40% {
+		transform: rotateZ(-90deg);
+	}
+	60% {
+		transform: rotateZ(-60deg);
+	}
+	80% {
+		transform: rotateZ(-85deg);
+	}
+	100% {
+		transform: rotateZ(-60deg);
+	}
+}
+@keyframes windyLeaf7 {
+	0% {
+		transform: rotateZ(15deg);
+	}
+	20% {
+		transform: rotateZ(15deg);
+	}
+	40% {
+		transform: rotateZ(-15deg);
+	}
+	60% {
+		transform: rotateZ(15deg);
+	}
+	80% {
+		transform: rotateZ(-5deg);
+	}
+	100% {
+		transform: rotateZ(15deg);
+	}
+}
+@keyframes windyLeaf8 {
+	0% {
+		transform: rotateZ(-45deg);
+	}
+	20% {
+		transform: rotateZ(-45deg);
+	}
+	40% {
+		transform: rotateZ(-15deg);
+	}
+	60% {
+		transform: rotateZ(-45deg);
+	}
+	80% {
+		transform: rotateZ(-20deg);
+	}
+	100% {
+		transform: rotateZ(-45deg);
+	}
+}
+@keyframes windyLeaf9 {
+	0% {
+		transform: rotateZ(-30deg);
+	}
+	20% {
+		transform: rotateZ(-30deg);
+	}
+	40% {
+		transform: rotateZ(0deg);
+	}
+	60% {
+		transform: rotateZ(-30deg);
+	}
+	80% {
+		transform: rotateZ(-5deg);
+	}
+	100% {
+		transform: rotateZ(-30deg);
+	}
+}
+@keyframes windyLeaf10 {
+	0% {
+		transform: rotateZ(-30deg);
+	}
+	20% {
+		transform: rotateZ(-30deg);
+	}
+	40% {
+		transform: rotateZ(-60deg);
+	}
+	60% {
+		transform: rotateZ(-30deg);
+	}
+	80% {
+		transform: rotateZ(-55deg);
+	}
+	100% {
+		transform: rotateZ(-30deg);
+	}
+}
+@keyframes windyLeaf11 {
+	0% {
+		transform: rotateZ(-60deg);
+	}
+	20% {
+		transform: rotateZ(-60deg);
+	}
+	40% {
+		transform: rotateZ(-90deg);
+	}
+	60% {
+		transform: rotateZ(-60deg);
+	}
+	80% {
+		transform: rotateZ(-85deg);
+	}
+	100% {
+		transform: rotateZ(-60deg);
+	}
+}
 @keyframes signFloat {
 	0% {
 		transform: translateY(13px) rotateZ(-3deg);

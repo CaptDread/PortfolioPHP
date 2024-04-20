@@ -10,37 +10,42 @@ $title = "Argh Portfolio off the port bow!";
             <?php require("components/hero.php"); ?>
 		</section>
 		<main class="home_main">
-            <div class="main_border">
-                <div class="branch1">
-                    <?php require('components/assets/leaf.php'); ?>
-                    <div class="branch11">
+            <div class="border_container">
+                <div class="main_border">
+                    <div class="branch1">
+                        <?php require('components/assets/leaf.php'); ?>
+                        <div class="branch11">
+                            <?php require('components/assets/leaf.php'); ?>
+                        </div>
+                    </div>
+                    <div class="branch2">
+                        <?php require('components/assets/leaf.php'); ?>
+                        <div class="branch21">
+                            <?php require('components/assets/leaf.php'); ?>
+                        </div>
+                    </div>
+                    <div class="branch3">
                         <?php require('components/assets/leaf.php'); ?>
                     </div>
-                </div>
-                <div class="branch2">
-                    <?php require('components/assets/leaf.php'); ?>
-                    <div class="branch21">
+                    <div class="branch4">
                         <?php require('components/assets/leaf.php'); ?>
+                        <div class="branch41">
+                            <?php require('components/assets/leaf.php'); ?>
+                        </div>
                     </div>
-                </div>
-                <div class="branch3">
-                    <?php require('components/assets/leaf.php'); ?>
-                </div>
-                <div class="branch4">
-                    <?php require('components/assets/leaf.php'); ?>
-                    <div class="branch41">
+                    <div class="branch5">
                         <?php require('components/assets/leaf.php'); ?>
+                        <div class="branch51">
+                            <?php require('components/assets/leaf.php'); ?>
+                        </div>
                     </div>
-                </div>
-                <div class="branch5">
-                    <?php require('components/assets/leaf.php'); ?>
-                    <div class="branch51">
+                    <div class="branch6">
                         <?php require('components/assets/leaf.php'); ?>
-                    </div>
-                </div>
-                <div class="branch6">
-                    <div class="branch61">
-                        <div class="branch611"></div>
+                        <div class="branch61">
+                            <?php require('components/assets/leaf.php'); ?>
+                            <div class="branch611">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
