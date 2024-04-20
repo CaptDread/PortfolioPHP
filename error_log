@@ -1,0 +1,25 @@
+[18-Apr-2024 00:14:36 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mongo.dll' (tried: ext\php_mongo.dll (The specified module could not be found), ext\php_php_mongo.dll.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 00:17:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mongo.dll' (tried: ext\php_mongo.dll (The specified module could not be found), ext\php_php_mongo.dll.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 00:22:16 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mongo.dll' (tried: ext\php_mongo.dll (The specified module could not be found), ext\php_php_mongo.dll.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 00:22:16 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: ext\mongodb.so (The specified module could not be found), ext\php_mongodb.so.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 02:30:55 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mongo.dll' (tried: ext\php_mongo.dll (The specified module could not be found), ext\php_php_mongo.dll.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 02:30:55 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: ext\mongodb.so (The specified module could not be found), ext\php_mongodb.so.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 02:30:55 UTC] PHP Fatal error:  Uncaught Error: Class "MongoDB\Driver\Manager" not found in C:\MAMP\PortfolioPHP\vendor\mongodb\mongodb\src\Client.php:118
+Stack trace:
+#0 C:\MAMP\PortfolioPHP\quickstart.php(5): MongoDB\Client->__construct('mongodb://CaptD...')
+#1 {main}
+  thrown in C:\MAMP\PortfolioPHP\vendor\mongodb\mongodb\src\Client.php on line 118
+[18-Apr-2024 02:31:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mongo.dll' (tried: ext\php_mongo.dll (The specified module could not be found), ext\php_php_mongo.dll.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 02:31:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: ext\mongodb.so (The specified module could not be found), ext\php_mongodb.so.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 02:31:03 UTC] PHP Fatal error:  Uncaught Error: Class "MongoDB\Driver\Manager" not found in C:\MAMP\PortfolioPHP\vendor\mongodb\mongodb\src\Client.php:118
+Stack trace:
+#0 C:\MAMP\PortfolioPHP\quickstart.php(5): MongoDB\Client->__construct('mongodb://CaptD...')
+#1 {main}
+  thrown in C:\MAMP\PortfolioPHP\vendor\mongodb\mongodb\src\Client.php on line 118
+[18-Apr-2024 02:31:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mongo.dll' (tried: ext\php_mongo.dll (The specified module could not be found), ext\php_php_mongo.dll.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 02:31:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: ext\mongodb.so (The specified module could not be found), ext\php_mongodb.so.dll (The specified module could not be found)) in Unknown on line 0
+[18-Apr-2024 02:31:51 UTC] PHP Fatal error:  Uncaught Error: Class "MongoDB\Driver\Manager" not found in C:\MAMP\PortfolioPHP\vendor\mongodb\mongodb\src\Client.php:118
+Stack trace:
+#0 C:\MAMP\PortfolioPHP\quickstart.php(5): MongoDB\Client->__construct('mongodb://CaptD...')
+#1 {main}
+  thrown in C:\MAMP\PortfolioPHP\vendor\mongodb\mongodb\src\Client.php on line 118

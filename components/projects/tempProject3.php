@@ -1,17 +1,17 @@
 <?php 
 
-$projName = "Name2";
-$projTag = "Tag2";
-$projDesc = "Desc2";
-$projImg = "Img2";
-$projLink = "link2.php";
-$projType = "website2"
+$projName = "Name3";
+$projTag = "Tag3";
+$projDesc = "Desc3";
+$projImg = "Img3";
+$projLink = "link3.php";
+$projType = "website3"
 ?>
 
 
 
-            <section class="project_card-container project_dd">
-                <article class="project_card tarot_dd">
+            <section class="project_card-container project_zz">
+                <article class="project_card tarot_zz">
                     <div class="card_front">
                         <figure>
                             <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>">
