@@ -64,7 +64,12 @@ $title = "Argh Portfolio off the port bow!";
                     <?php require('components/projects.php'); ?>
                 </section>
                 <section class="main_pros">
-                    <!-- <h3>skills</h3> -->
+                    <div class="main_bkgd1">
+                        <div class="main_bkgd-blur"></div>
+                    </div>
+                    <ul>
+                    <?php require("components/pros/javascript.php"); ?>
+                    </ul>
                 </section>
                 <section class="main_about">
                     <!-- <h3>about me</h3> -->
