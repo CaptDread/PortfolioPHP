@@ -237,6 +237,7 @@ body {
 	height: 15px;
 	position: relative;
 	left: 10%;
+	transition: rotate 42s ease-in-out;
 }
 
 .home_head {
@@ -1093,33 +1094,123 @@ body {
 }
 .home_main .seabed {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(7, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(12, 1fr);
 	padding: 0%;
+	gap: 0%;
+}
+.home_main .seabed .skillBouy {
+	width: 3.5em;
+	height: 3.5em;
+	background: linear-gradient(130deg, #920d8b 50%, #333136 50%);
+	border: 3px #000 solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 20;
+}
+.home_main .seabed .skillBouy p {
+	transform: rotateZ(130deg);
+	position: relative;
+	top: 25%;
+	font-weight: 900;
+	font-size: 1.3em;
+	color: #ffffff;
+	width: -moz-fit-content;
+	width: fit-content;
+	text-transform: capitalize;
+	z-index: 30;
 }
 .home_main .main_pros {
 	margin-top: 10%;
 	height: 100vh;
 }
-.home_main .main_pros .itemJS {
+.home_main .main_pros .itemLS {
 	display: grid;
 	height: 100%;
 	width: 100%;
-	grid-area: 3/1/8/2;
+	position: relative;
+	left: 2%;
+	grid-area: 6/2/13/3;
 	grid-template-rows: repeat(5, 1fr);
 }
-.home_main .main_pros .itemJS .chainHead {
-	transform: rotateZ(-115deg);
+.home_main .main_pros .itemLS .chainHead {
+	transform: rotateZ(-123deg);
 	margin-top: -10px;
 }
-.home_main .main_pros .itemJS .anchor {
+.home_main .main_pros .itemLS .anchor {
+	grid-row: 5/6;
+	transform: rotateZ(-8deg);
+}
+.home_main .main_pros .itemMU {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	left: -49%;
+	top: 7%;
+	grid-area: 5/2/12/3;
+	grid-template-rows: repeat(5, 1fr);
+}
+.home_main .main_pros .itemMU .chainHead {
+	transform: rotateZ(-119deg);
+	margin-top: -10px;
+}
+.home_main .main_pros .itemMU .anchor {
+	grid-row: 5/6;
+	transform: rotateZ(-13deg);
+}
+.home_main .main_pros .itemFW {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	left: -1%;
+	grid-area: 6/1/13/2;
+	grid-template-rows: repeat(5, 1fr);
+}
+.home_main .main_pros .itemFW .chainHead {
+	transform: rotateZ(-118deg);
+	margin-top: -10px;
+}
+.home_main .main_pros .itemFW .anchor {
 	grid-row: 5/6;
 	transform: rotateZ(-15deg);
 }
-.home_main .main_pros .itemJS .bouy {
-	width: 13px;
-	height: 13px;
-	background: red;
+.home_main .main_pros .itemDB {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-area: 5/3/12/4;
+	position: relative;
+	left: -33%;
+	top: 10%;
+	grid-template-rows: repeat(5, 1fr);
+}
+.home_main .main_pros .itemDB .chainHead {
+	transform: rotateZ(-130deg);
+	margin-top: -10px;
+}
+.home_main .main_pros .itemDB .anchor {
+	grid-row: 5/6;
+	transform: rotateZ(-5deg);
+}
+.home_main .main_pros .itemGE {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-area: 6/3/13/4;
+	position: relative;
+	left: 40%;
+	grid-template-rows: repeat(5, 1fr);
+}
+.home_main .main_pros .itemGE .chainHead {
+	transform: rotateZ(-90deg);
+	margin-top: -10px;
+}
+.home_main .main_pros .itemGE .anchor {
+	grid-row: 5/6;
+	transform: rotateZ(-42deg);
 }
 
 .home_footer {
@@ -1694,6 +1785,23 @@ body {
 	}
 	100% {
 		transform: rotateZ(-60deg);
+	}
+}
+@keyframes swaying {
+	0% {
+		transform: rotateZ(5deg);
+	}
+	33% {
+		transform: rotateZ(0deg);
+	}
+	66% {
+		transform: rotateZ(-5deg);
+	}
+	99% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
 	}
 }
 @keyframes signFloat {

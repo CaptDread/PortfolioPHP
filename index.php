@@ -68,8 +68,11 @@ $title = "Argh Portfolio off the port bow!";
                         <div class="main_bkgd-blur"></div>
                     </div>
                     <ul class="seabed">
-                    <?php require("components/pros/javascript.php"); ?>
-                    <?php require("components/pros/php.php"); ?>
+                        <?php require("components/pros/methutil.php"); ?>
+                        <?php require("components/pros/frameworks.php"); ?>
+                        <?php require("components/pros/languages.php"); ?>
+                        <?php require("components/pros/databases.php"); ?>
+                        <?php require("components/pros/gameEngines.php"); ?>
                     </ul>
                 </section>
                 <section class="main_about">
