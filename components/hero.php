@@ -3,7 +3,7 @@
 $title = "Ain't no heros on the high seas!";
 
 
-$textArr = ["I hear The Captain is skilled at knife and axe throwing, a friend of mine has even taken lessons from him.", "They say Dread has a black belt in two different martial arts, and has even won trophies and metals!", "I've seen that there Dread fellow toss a pizza dough behind his back and down his shoulders, quite a feat if you ask me.", "Captain's not here, its hard to keep up with him with his 6 years of parkour experience.", "Cap told me that he has played 6 different characters in D&D, half of them artificers.", "Before Dread was a Captain he spent time converting vans; Solar Panels, projectors,  mini bar... the works."];
+$textArr = ["So ya wanna hear about Captain Dread huh? Take seat, this is gonna be one crazy story...", "Aye welcome to Captain's Dread Cove, on Isla De La Muerte. Lookin to join the crew, are ye?", "I hear The Captain is skilled at knife and axe throwing, a friend of mine has even taken lessons from him.", "They say Dread has a black belt in two different martial arts, and has even won trophies and metals!", "I've seen that there Dread fellow toss a pizza dough behind his back and down his shoulders, quite a feat if you ask me.", "Captain's not here, its hard to keep up with him with his 6 years of parkour experience.", "Cap told me that he has played 6 different characters in D&D, half of them artificers.", "Before Dread was a Captain he spent time converting vans; Solar Panels, projectors,  mini bar... the works."];
 
 // $min = 0;
 $max = count($textArr) - 1;

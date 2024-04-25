@@ -13,6 +13,8 @@ $projType = "web Animation"
             <section class="project_card-container project_mm">
                 <article class="project_card tarot_mm">
                     <div class="card_front">
+                        <div class="card_front-bkgd"></div>
+                        <div class="card_front-img"></div>
                     </div>
                     <div class="card_back">
                         <div class="project_card-descContainer">
