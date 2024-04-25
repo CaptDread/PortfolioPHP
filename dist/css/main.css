@@ -613,6 +613,9 @@ body {
 	background: #ffffff;
 	border-bottom: 0.42em #9a9a9a solid;
 	border-left: 0.24em #9a9a9a solid;
+	position: relative;
+	left: -10px;
+	z-index: 20;
 }
 .home_hero .hero_container .text_bubble .hero_head {
 	background: #ffffff;
@@ -627,8 +630,10 @@ body {
 	border-right: 0.42em #9a9a9a solid;
 	grid-row: 1/4;
 	grid-column: 1/5;
-	width: 95%;
+	width: 100%;
 	margin-left: 10px;
+	position: relative;
+	left: -10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
