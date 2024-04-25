@@ -13,9 +13,6 @@ $projType = "website"
             <section class="project_card-container project_zz">
                 <article class="project_card tarot_zz">
                     <div class="card_front">
-                        <figure>
-                            <!-- <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>"> -->
-                        </figure>
                     </div>
                     <div class="card_back">
                         <div class="project_card-descContainer">
