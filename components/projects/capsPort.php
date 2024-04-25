@@ -1,11 +1,11 @@
 <?php 
 
-$projName = "Name2";
-$projTag = "Tag2";
-$projDesc = "Desc2";
-$projImg = "Img2";
-$projLink = "link2.php";
-$projType = "website2"
+$projName = "captain's port";
+$projTag = "Portfolio";
+$projDesc = "Custom made and designed by yours truly. Built to showcase some of my favorite parts of web development, while staying true to who I am. Built with PHP, Javascript, SCSS, and gsap.";
+$projImg = "../../dist/img/captainsPort.png";
+$projLink = "captdread.com";
+$projType = "my portfolio"
 ?>
 
 
@@ -14,9 +14,8 @@ $projType = "website2"
                 <article class="project_card tarot_dd">
                     <div class="card_front">
                         <figure>
-                            <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>">
+                            <!-- <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>"> -->
                         </figure>
-                        <h3 class="project_card-header"><?php echo $projName;?></h3>
                     </div>
                     <div class="card_back">
                         <div class="project_card-descContainer">

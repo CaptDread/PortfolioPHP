@@ -5,8 +5,8 @@
 
 <ul>
     <?php 
-        require("projects/tempProject.php");
-        require("projects/tempProject2.php");
-        require("projects/tempProject3.php");
+        require("projects/capsPort.php");
+        require("projects/movingMando.php");
+        require("projects/buildBlog.php");
     ?>
 </ul>

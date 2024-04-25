@@ -1,9 +1,9 @@
 <?php 
 
 $projName = "Build Blog";
-$projTag = "Tag3";
+$projTag = "Build Cool Shit";
 $projDesc = "This is an example of my wordpress experience, while also being a showcase of my artificed builds! Stuff like Face Tracking Cameras, Automated Nerf Guns, LED Fixtures, and more!";
-$projImg = "Img3";
+$projImg = "../../dist/img/buildBlog.png";
 $projLink = "link3.php";
 $projType = "website"
 ?>
@@ -14,9 +14,8 @@ $projType = "website"
                 <article class="project_card tarot_zz">
                     <div class="card_front">
                         <figure>
-                            <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>">
+                            <!-- <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>"> -->
                         </figure>
-                        <h3 class="project_card-header"><?php echo $projName;?></h3>
                     </div>
                     <div class="card_back">
                         <div class="project_card-descContainer">

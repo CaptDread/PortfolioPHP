@@ -3,7 +3,7 @@
 $projName = "Moving Mando";
 $projTag = "Tag";
 $projDesc = "Animated posters are a favorite of mine, like be honest, aren't they just the coolest. Here I used, photoshop, as well as various other web animating methods to animate a Mandalorian Poster.";
-$projImg = "../../dist/img/project_mm.jpg";
+$projImg = "../../dist/img/movingMando.png";
 $projLink = "link.php";
 $projType = "web Animation"
 ?>
@@ -14,9 +14,8 @@ $projType = "web Animation"
                 <article class="project_card tarot_mm">
                     <div class="card_front">
                         <figure>
-                            <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>">
+                            <!-- <img src="<?php echo $projImg;?>" alt="Picture of <?php echo $projName;?>"> -->
                         </figure>
-                        <h3 class="project_card-header"><?php echo $projName;?></h3>
                     </div>
                     <div class="card_back">
                         <div class="project_card-descContainer">
