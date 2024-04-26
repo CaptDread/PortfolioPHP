@@ -241,14 +241,22 @@ body {
 }
 
 .home_head {
-	background: #ffffff;
-	height: 13vh;
-	border-bottom: 0.93em solid #9a9a9a;
+	background: rgb(94, 50, 3);
+	height: 10vh;
+	border-bottom: 0.93em solid rgb(234, 180, 2);
 	display: grid;
 	grid-template-columns: repeat(4, 1fr) 18%;
 	grid-template-rows: repeat(1, 1fr);
 	z-index: 40;
 	position: relative;
+}
+.home_head .boarder {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	background: black;
+	z-index: 0;
+	top: 50%;
 }
 .home_head .hide-small {
 	display: none;
@@ -258,6 +266,7 @@ body {
 	grid-row: 1/3;
 	width: 100%;
 	position: relative;
+	top: -10px;
 	z-index: 50;
 }
 .home_head .logoLink .head_logo {
@@ -299,14 +308,18 @@ body {
 	height: -moz-fit-content;
 	height: fit-content;
 	cursor: pointer;
-	gap: 10px;
+	gap: 5px;
+	z-index: 10;
+	top: -13px;
+	position: relative;
 }
 .home_head .burg_btn div {
-	background: gold;
+	background: url("../../dist/img/burgerBone.png");
+	background-size: 100% 110%;
+	background-repeat: no-repeat;
+	background-position-y: center;
 	width: 100%;
-	height: 9px;
-	border-radius: 30px;
-	border: 0.13em solid rgb(234, 180, 2);
+	height: 1.5em;
 }
 .home_head #closed .topBun {
 	transform: translateY(0px) rotate(0deg);
@@ -321,11 +334,11 @@ body {
 	gap: 0%;
 }
 .home_head #open .topBun {
-	transform: translateY(5px) rotate(-495deg);
+	transform: translateY(13px) rotate(-495deg);
 	transition: transform 420ms ease;
 }
 .home_head #open .botBun {
-	transform: translateY(-5px) rotate(-405deg);
+	transform: translateY(-13px) rotate(-405deg);
 	transition: transform 420ms ease;
 }
 .home_head #active {
@@ -1048,7 +1061,7 @@ body {
 	background-size: cover;
 }
 .home_main ul .project_dd .card_front .card_front-bkgd {
-	background: linear-gradient(pink, skyblue, blue);
+	background: linear-gradient(42deg, blue, skyblue, pink, gold);
 	animation: tarotBKGD 13s ease-in-out infinite;
 }
 .home_main ul .project_zz {

@@ -25,6 +25,7 @@ if (!isset($title)){
 
 	<body>
 		<header class="home_head">
+			<div class="boarder"></div>
 			<a href="index.php" class="logoLink">
 				<figure class="head_logo">
 					<img class="dreadlogo" src="dist/img/captainsLogo.png" alt="The Captain's custom made Logo">
