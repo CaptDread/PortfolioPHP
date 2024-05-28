@@ -24,7 +24,7 @@ if (!isset($title)){
     <!--            -->
 
 	<body>
-		<header class="home_head">
+		<header class="home_head" id="coldOpen">
 			<div class="boarder"></div>
 			<a href="index.php" class="logoLink">
 				<figure class="head_logo">
@@ -33,10 +33,9 @@ if (!isset($title)){
 			</a>
 			<nav class="hide-small" id="inactive">
 				<ul>
-					<li><a href="hero.php">home</a></li>
 					<li><a href="buildblog.php">build blog</a></li>
-					<li><a href="projects.php">projects</a></li>
-					<li><a href="contact.php">contact me</a></li>
+					<li><a target="_blank" href="../dist/DomingoDunlapResume2024.pdf">resume</a></li>
+					<!-- <li><a href="#content" onclick="window.location.reload(true);">projects</a></li> -->
 				</ul>
 			</nav>
 			<div class="hide-large burg_btn" id="closed">

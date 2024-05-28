@@ -6,7 +6,7 @@
 						<a target="_blank" href="https://github.com/CaptDread">git</a>
 						<a target="_blank" href="https://codepen.io/captdread">codepen</a>
 						<a target="_blank" href="http://captdread.com/portfolio">full portfolio</a>
-						<a target="_blank" href="dist/img/Domingo-DUNLAP.pdf">resume</a>
+						<a target="_blank" href="../dist/DomingoDunlapResume2024.pdf">resume</a>
 					</ul>
 				</nav>
 				<nav class="quickLinks">
@@ -33,6 +33,7 @@
 				</a></li>
                 <li class="followTray_link2"><a target="_blank" href="https://www.github.com/CaptDread" class="git-btn">
 					<figure>
+					<i class="fab fa-github"></i>
 					</figure>
 				</a></li>
 				<li class="followTray_link3"><a target="_blank" href="https://www.instagram.com/capt_dread/" class="insta-btn">

@@ -2,7 +2,7 @@
 
 $projName = "Moving Mando";
 $projTag = "Tag";
-$projDesc = "Animated posters are a favorite of mine, like be honest, aren't they just the coolest. Here I used, photoshop, as well as various other web animating methods to animate a Mandalorian Poster.";
+$projDesc = "Animated Posters are a favorite of mine. Here I used, photoshop, as well as various other web animating methods to animate a Mandalorian Poster.";
 $projImg = "../../dist/img/movingMando.png";
 $projLink = "link.php";
 $projType = "web Animation"

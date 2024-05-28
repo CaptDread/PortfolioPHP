@@ -49,7 +49,7 @@ $title = "Argh Portfolio off the port bow!";
                     </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="content">
                 <section class="main_projects">
                     <div class="main_bkgd">
                         <div class="main_bkgd-blur"></div>
